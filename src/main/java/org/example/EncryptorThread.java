@@ -5,12 +5,12 @@ import net.lingala.zip4j.model.ZipParameters;
 import java.io.File;
 
 
-public class EncrypterThread extends Thread {
+public class EncryptorThread extends Thread {
     private File file;
     private GUIForm form;
     private ZipParameters parameters;
 
-    public EncrypterThread(GUIForm form) {
+    public EncryptorThread(GUIForm form) {
         this.form = form;
     }
 

@@ -114,14 +114,14 @@ public class GUIForm {
     }
 
     private void encryptFile(String password) {
-        EncrypterThread thread = new EncrypterThread(this);
+        EncryptorThread thread = new EncryptorThread(this);
         thread.setFile(selectedFile);
         thread.setPassword(password);
         thread.start();
     }
 
     private void decryptFile(String password) {
-        DecrypterThread thread = new DecrypterThread(this);
+        DecryptorThread thread = new DecryptorThread(this);
         thread.setFile(selectedFile);
         thread.setPassword(password);
         thread.start();
